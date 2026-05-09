@@ -8,27 +8,21 @@ $wgConf->settings = [
 		// if you want to allow also usage of https, just use '//localhost'
 		// and set 'http://localhost' at 'wgCanonicalServer'
 		'default' => 'https://localhost',
-		'sourklou_wikiwiki' => 'https://wiki.vikaspedia.org',
-		'sourklou_datawiki' => 'https://data.vikaspedia.org',
-         'sourklou_loginwiki' => 'https://login.vikaspedia.org',
+		'nphistorywiki' => 'https://meta.govnp.tech',
+		'historywiki' => 'https://history.govnp.tech',
 		],
 	'wgCanonicalServer' => [
 		'default' => 'https://localhost',
-	    	'sourklou_wikiwiki' => 'https://wiki.vikaspedia.org',
-	    	'sourklou_datawiki' => 'https://data.vikaspedia.org',
-         'sourklou_loginwiki' => 'https://login.vikaspedia.org',
+	    'nphistorywiki' => 'https://meta.govnp.tech',
+		'historywiki' => 'https://history.govnp.tech',
 	],
 	'wgSitename' => [
 		'default' => '',
-		'sourklou_enwiki' => 'Vikaspedia',
-	    	'sourklou_datawiki' => 'Data Wiki',
-	    	'sourklou_wikiwiki'=>'wikiwiki',
+		'nphistorywiki' => 'Meta Wiki',
+	    	'historywiki' => 'History Wiki',
 	],
 	'wgLanguageCode' => [
 		'default' => 'en',
-		'sourklou_bnwiki'=>'bn',
-		'sourklou_hiwiki'=>'hi',
-		'sourklou_idwiki'=>'id',
 	],
 	'wgScriptPath' => [
 		'default' => '',
@@ -196,8 +190,7 @@ $wgConf->settings = [
 	// CentralAuth // !becarefull
          'wgCentralAuthAutoCreateWikis' => [
 		'default' => [
-			'sourklou_metawiki',
-			'sourklou_loginwiki',
+			'nphistorywiki',
 		],
 	],
 	'wgCentralAuthAutoNew' => [
@@ -213,18 +206,18 @@ $wgConf->settings = [
 		'default' => true,
 	],
 	'wgCentralAuthCookieDomain' => [
-		'default' => '.vikaspedia.org',
+		'default' => '.govnp.tech',
 	],
 	'wgCentralAuthDatabase' => [
-		'default' => 'sourklou_ca',
+		'default' => 'centralauth',
 	],
 	'wgCentralAuthEnableGlobalRenameRequest' => [
 		'default' => false,
-		'sourklou_metawiki' => true,
+		'nphistorywiki' => true,
 	],
 	'wgCentralAuthEnableUserMerge' => [
 		'default' => false,
-		'sourklou_metawiki' => true,
+		'nphistorywiki' => true,
 	],
 	'wgCentralAuthPreventUnattached' => [
 		'default' => true,
